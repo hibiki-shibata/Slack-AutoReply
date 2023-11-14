@@ -37,7 +37,7 @@ async def handle_message(event):
             await web.chat_postMessage(
                 channel=event["message"]["channel"],
                 thread_ts=event["message"].get("ts", event["message"].get("ts")),
-                text=f"Please request the access via Freshservice \n https://wolt.freshservice.com/support/catalog/items/{IT_service[trigger]}",
+                text=f"Please request the access via Freshservice \n https://google.com/items/{IT_service[trigger]}",
             )
             print("success")
         except Exception as e:
